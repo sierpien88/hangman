@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman</title>
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+	<link rel="stylesheet" href="style.css">
+	
+	
+</head>
+
+<body>
+    <div id="container">
+  <div id="start">Would you like to play hangman?
+  <button>
+    Start Game
+  </button>
+  </div>
+  <div id="playground">
+  <div id="sentence"></div>
+  <div id="images">
+  <!-- Pictures from webside: "http://miroslawzelent.pl/kurs-javascript/przetwarzanie-lancuchow-gra-wisielec/" -->
+    <img class="first" src="img/s0.jpg">
+    <img class="display" src="img/s1.jpg">
+    <img class="display" src="img/s2.jpg">
+    <img class="display" src="img/s3.jpg">
+    <img class="display" src="img/s4.jpg">
+    <img class="display" src="img/s5.jpg">
+    <img class="display" src="img/s6.jpg">
+    <img class="display" src="img/s7.jpg">
+    <img class="display" src="img/s8.jpg">
+    <img class="display" src="img/s9.jpg">
+  </div>
+  <div id="letters">
+  </div>
+  <!--  <div id="counter">Counter:</div> -->
+    <div id="message_win">
+      <div>You win!! Yeaaaaah!!</div>
+      <div>Would you like to play again?</div>
+      <button id="yes">YES</button>
+      <button id="no">NO</button>
+    </div>  
+  <div id="message">
+      <div>You are dead!!</div>
+      <div>Would you like to play again?</div>
+      <button id="yes2">YES</button>
+      <button id="no2">NO</button>
+   </div>
+  
+  </div>
+  
+   <div id="end">
+    <div id="thanks">Thanks for game</div>
+  
+    <img id="unicorn" src="img/unicorn.png"> 
+   
+   </div>  
+</div>
+
+<script src="main.js"></script>
+</body>
+
+</html>
+

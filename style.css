@@ -1,0 +1,120 @@
+body{
+  background-image: url('img/hangman.jpeg');
+}
+#start{
+  color: #fff;
+  font-weight: bold;
+  margin-top: 60px;
+  font-size: 40px;
+  text-align: center;
+}
+#start>button{
+  display: block;
+  margin-right:auto;
+  margin-left: auto;
+  margin-top: 20px;
+  width: 200px;
+  height: 100px;
+  border: 4px solid black;
+  border-radius: 10%;
+  background-color:  #ffbf80;
+  color: #000;
+  font-weight: bold;
+  font-size: 20px;
+}
+#start>button:hover{
+  background-color:   #ff8000;
+}
+#playground {
+  background-color: #e6e6e6;
+  border: 4px solid black;
+  border-radius: 2%;
+  padding: 10px;
+  width: 900px;
+  height: 420px;
+  margin: auto;
+}
+
+#container {
+  
+  margin: auto;
+  text-align: center;
+}
+div#sentence>div{
+  display: inline-block;
+  border: 2px solid black;
+  margin: 4px;
+  padding: 20px;
+  font-size: 24px;
+  text-align: center;
+  width: 40px;
+  background-color: #fff;
+  border-radius: 20%;
+  font-weight: bold;
+ 
+}
+.single_letter{
+  margin: 4px;
+  border: 2px solid black;
+  border-radius: 20%;
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  
+}
+#letters{
+  margin-top: 20px;
+}
+.display{
+   display: none;
+  margin-top:20px;
+}
+.first{
+  display:block;
+  margin-top:20px;
+}
+#images{
+  float:left;
+}
+#message{
+  display: none;
+  margin:5px;
+}
+#yes, #no, #yes2, #no2{
+  margin:5px;
+  padding: 5px 20px;
+  border: 2px solid black;
+  border-radius: 10%;
+  font-weight: bold;
+}
+
+#yes, #yes2{
+  background-color: #33cc33;
+}
+#no, #no2{
+  background-color:  #e62e00;
+}
+#end{
+  display:none;
+
+}
+#message_win{
+ display:none; 
+}
+
+span{
+  color:  #cc0099;
+  font-size: 26px;
+}
+#thanks{
+
+	color: #fff;
+	font-size: 40px;
+	font-weight: bold;
+	
+}
+#unicorn{
+	width: 30%;
+	height: 30%;
+}
