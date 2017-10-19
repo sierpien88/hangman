@@ -1,13 +1,13 @@
 $(document).ready(function() {
    $('#playground').hide();
    let start_test =  $('#start').click(function(){
-/* ------ preparation playground ------*/
+    /* ------ preparation playground ------*/
    
     $('#playground').show();
     $('#start').hide();
     let counter = 0;
      
-/* ------ random word/sentence creation ------*/
+    /* ------ random word/sentence creation ------*/
     
     const objects = [sentence_1, sentence_2, sentence_3, sentence_4, sentence_5];
     let objects_length = parseInt(objects.length);
@@ -66,7 +66,7 @@ $(document).ready(function() {
     })  
   }         
   })
-/* ------ function when you win/lost game ------ */
+  /* ------ function when you win/lost game ------ */
  function after_game() {
    $('#yes2').click(function() {
     history.go(0);
@@ -87,7 +87,7 @@ $(document).ready(function() {
 });
          
   }
-/*------ constructor for sentence   ------*/
+  /*------ constructor for sentence   ------*/
   function Sentence(sentence_letter){
     this.sentence_letter = sentence_letter;
     
@@ -103,35 +103,33 @@ $(document).ready(function() {
       }
       
      };
-/* ------ div's for sentence ------*/
+    /* ------ div's for sentence ------*/
     this.class_letter = function() {
       for(let i = 0; i < sentence_letter.length; i++) {
        $('#sentence').append('<div class="' + this.sentence_letter[i] + '">'+'-'+'</div>');
       };
     };
   }
-/* ------ Buttons with letter create ------*/
+   /* ------ Buttons with letter create ------*/
   for(let i=65;i<=90;i++){
     
     let char = String.fromCharCode(i);
     $("#letters").append('<button class="single_letter">' + char + '</button>');
   }
   
-/* ------ Create Words ------*/
-
- const sent1_array = ['K','A','J','A','K']; 
+  const sent1_array = ['A','M','E','R','I','C','A']; 
   const sentence_1 = new Sentence(sent1_array);
   
-  const sent2_array = ['M','O','T','Y','L','E','K'];
+  const sent2_array = ['E','U','R','O','P','E'];
   const sentence_2 = new Sentence(sent2_array);
   
   const sent3_array = ['A','U','S','T','R','A','L','I','A'];
   const sentence_3 = new Sentence(sent3_array);
   
-  const sent4_array = ['K','A','K','T','U','S'];
+  const sent4_array = ['S','M','I','L','E'];
   const sentence_4 = new Sentence(sent4_array);
   
-  const sent5_array = ['M','U','C','H','A'];
+  const sent5_array = ['P','R','O','G','R','A','M','M','E','R'];
   const sentence_5 = new Sentence(sent5_array);
 
 });
